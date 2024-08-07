@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Form from '../components/index';
 
 export default function Contact(){
