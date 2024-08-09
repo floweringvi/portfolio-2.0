@@ -2,6 +2,10 @@ import { React, useState } from 'react';
 
 import './style.css';
 
+const fonts ={
+  fontFamily:"serif"
+}
+
 function Form() {
   
   const [firstName, setFirstName] = useState('');
@@ -31,7 +35,7 @@ function Form() {
 
   return (
     <div className="container text-center">
-      <h2>
+      <h2 style={fonts}>
         Talk to you soon {firstName} {lastName}, thanks for reaching out!
       </h2>
       <form className="form" onSubmit={handleFormSubmit}>
@@ -63,7 +67,7 @@ function Form() {
         type ='text'
         placeholder='Please enter your message here!'
         />
-        <button type="submit">
+        <button style={{color:"green"}} type="submit">
           Submit
         </button>
       </form>

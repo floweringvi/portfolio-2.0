@@ -1,6 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
 
+const style={
+  fontFamily:"serif"
+}
+
 function NavBar() {
   const currentPage = useLocation().pathname;
 
@@ -10,6 +14,7 @@ function NavBar() {
         <Link
           to="/"
           className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          style={style}
         >
           About Me
         </Link>
@@ -18,6 +23,7 @@ function NavBar() {
         <Link
           to="/portfolio"
           className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
+          style={style}
         >
           Portfolio
         </Link>
@@ -26,6 +32,7 @@ function NavBar() {
         <Link
           to="/resume"
           className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+          style={style}
         >
           Resume 
         </Link>
@@ -34,6 +41,7 @@ function NavBar() {
         <Link
           to="/contact"
           className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
+          style={style}
         >
           Contact
         </Link>
