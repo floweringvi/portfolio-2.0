@@ -1,7 +1,8 @@
 import React from 'react'
 
+import resume from '../assets/violetstanziani-resume.pdf'
 export default function Resume(){
     <div>
-        <h1>Nothing Here Yet!</h1>
+        <a href={resume} download>Please download a copy of my resume here!</a>
     </div>
 }
