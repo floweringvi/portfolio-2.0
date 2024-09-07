@@ -2,9 +2,7 @@ import { React, useState } from 'react';
 
 
 
-const fonts ={
-  fontFamily:"serif"
-}
+
 
 function Form() {
   
@@ -35,7 +33,7 @@ function Form() {
 
   return (
     <div className="container text-center">
-      <h2 style={fonts}>
+      <h2 className="inconsolata">
         Talk to you soon {firstName} {lastName}, thanks for reaching out!
       </h2>
       <form className="form" onSubmit={handleFormSubmit}>

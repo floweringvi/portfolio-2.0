@@ -11,9 +11,9 @@ const Hero =() => {
           className="hero-image"
         />
         <div className="hero-content">
-          <p id="explore-feature">Full-Stack Development</p>
-          <div className="single-craft">
-            <h1 id="single-craft" role="button">
+          <p id="hero-borders">Full-Stack Development</p>
+          <div>
+            <h1 role="button" href="">
               Violet Stanziani
             </h1>
           </div>

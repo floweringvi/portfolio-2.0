@@ -1,38 +1,18 @@
 import React from 'react';
 
-import photo from '../assets/images.portfolio.png'
+import photo from '../assets/images/images.portfolio.png'
 
 
 
-const header={
-    color: "black",
-    textAlign:"justify",
-    padding:"15px",
-    fontFamily:"Serif"
-}
-const para ={
-    color: "black",
-    textAlign:"justify",
-    padding:"15px",
-    fontFamily:"Serif",
-    fontSize:"20px"
-}
-const photostyle ={
-    display:"flex",
-    marginLeft:"10px",
-    borderRadius:"10px",
-    boxShadow:"4px 2px 3px 4px rgba(12,12,12,0,2)",
-    padding:"15px",
-    
-}
+
 
 export default function Home() {
     return (
         <div >
-            <h1 style={header}>This is Violet Stanziani</h1>
-            <img style={photostyle} alt ={'Avater Likeness as Placeholder'}
+            <h1>This is Violet Stanziani</h1>
+            <img alt ={'Avater Likeness as Placeholder'}
             src= {photo}></img>
-            <p style={para} >
+            <p>
                 Violet Stanziani is a budding developer who enjoys working on all aspects of the Full Stack. Proficient in:
                 <ul>
                     <li>HTML</li>
