@@ -1,4 +1,5 @@
 import React from 'react';
+import Hero from '../components/Hero'
 
 import dadDinner from '../assets/images/dad-dinner.png'
 import greentrail from '../assets/images/greentrail.png'
@@ -7,6 +8,7 @@ import greentrail from '../assets/images/greentrail.png'
 export default function Portfolio(){
     return (
     <div>
+        <Hero/>
         <img alt={'image of dad dinner homepage'} src={dadDinner} ></img>
        <h2><a href={'https://adammathis05.github.io/dad-dinner/'}>Dad Dinner</a></h2>
        <p >Dad Dinner is a website for the busy parent in your life, they have got a million things to do and figuring out what to have for dinner shouldn't be one of them. 

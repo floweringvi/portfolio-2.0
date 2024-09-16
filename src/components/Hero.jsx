@@ -13,7 +13,7 @@ const Hero =() => {
         <div className="hero-content">
           <p id="hero-borders">Full-Stack Development</p>
           <div>
-            <h1 role="button" href="">
+            <h1 role="button" href="/">
               Violet Stanziani
             </h1>
           </div>
