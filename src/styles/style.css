@@ -30,6 +30,11 @@ body {
   font-variation-settings:
     "wdth" 100;
 }
+.sofadi-one-regular {
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*STYLES*/
 .borders {
@@ -58,6 +63,15 @@ color: var(--background-color);
   height: 500px; /* Adjust height as needed */
 }
 
+.hero-font{
+  font-weight: bolder;
+}
+#hero-title{
+  font-size: 60px;
+}
+#hero-sub{
+  font-size:30px;
+}
 .hero-image {
   width: 100%;
   height: 100%;
@@ -77,6 +91,14 @@ color: var(--background-color);
 #hero-borders {
   border-top: 2px solid var(--text-color);
   padding-top: 20px;
+}
+
+/*ABOUTME*/
+.about-body{
+  font-size: 22px;
+}
+ul {
+  list-style: none;
 }
 
 /*FORM*/
