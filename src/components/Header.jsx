@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../assets/violetstanziani-resume.pdf'
 
 export default function Header(){
     return(
@@ -19,21 +20,22 @@ export default function Header(){
             </div>
             <div>
                 <a
-                className="borders text-decoration-none"
+                className="borders handjet text-decoration-none invert-button"
                 href="/projects"
                 role="button"
                 >
                     Projects
                 </a>
                 <a
-                className="borders text-decoration-none"
-                href="/resume"
+                className="borders handjet text-decoration-none invert-button"
+                href={Resume}
+                download="VioletStanzianiResume"
                 role="button"
                 >
-                    Resume
+                   Download My Resume
                 </a>
                 <a
-                className="borders text-decoration-none"
+                className="borders handjet text-decoration-none invert-button"
                 href="/contact"
                 role="button"
                 >
