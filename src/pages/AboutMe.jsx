@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from'../components/Hero'
+
 import photo from '../assets/images/images.portfolio.png'
 
 // import ReactDOM from 'react-dom'
@@ -17,7 +17,7 @@ const element = <FontAwesomeIcon icon={faCode} />
 export default function Home() {
     return (
         <div >
-            <Hero/>
+           
             <div className="container">
             <div className="row">
                 <div className="col">
