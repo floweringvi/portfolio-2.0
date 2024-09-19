@@ -157,8 +157,11 @@ ul {
 }
 .carousel-text {
 color: var(--text-color);
+margin-top: 10px;
 }
-
+.carousel-ref{
+  margin-bottom:20px;
+}
 
 @keyframes bounce {
   40% {transform: translateY(-10px);};
@@ -166,6 +169,9 @@ color: var(--text-color);
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);};
 }
 /*FORM*/
+.contact-header{
+  text-align:center;
+}
 .form {
     margin: 20px;
   }

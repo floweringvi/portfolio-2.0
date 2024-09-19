@@ -1,11 +1,14 @@
-import { React, useState } from 'react';
+import { React, useState, useRef} from 'react';
+
+import emailjs from '@emailjs/browser';
+
 
 
 
 
 
 function Form() {
-  
+
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -19,24 +22,33 @@ function Form() {
     return name === 'firstName' ? setFirstName(value) : setLastName(value);
   };
 
-  const handleFormSubmit = (e) => {
-    
-    e.preventDefault();
+  const form = useRef();
 
-    
-    alert(`Thanks ${firstName} ${lastName} , I'll get back to you shortly`);
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setMessage('');
-  };
+const sendEmail = (e) => {
+e.preventDefault();
+// service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
+emailjs.sendForm('service_185iimh', 'template_f8ckkmi', form.current, 
+'Bsx-VnVnxg6DAcwuC')
+  .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
+  setFirstName('');
+  setLastName('');
+  setEmail('');
+  setMessage('');
+};
+  
+  
 
+ 
   return (
     <div className="container text-center">
-      <h2 className="inconsolata">
+      <h2 className="handjet">
         Talk to you soon {firstName} {lastName}, thanks for reaching out!
       </h2>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <form className="form" onSubmit={sendEmail}>
         <input
           value={firstName}
           name="firstName"
