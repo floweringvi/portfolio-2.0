@@ -14,7 +14,7 @@ export default function Header(){
                 href="/"
                 role="button"
                 >
-                    Violet Stanziani
+                    Violet Stanziani Tech
                 </a>
                 
             </div>
