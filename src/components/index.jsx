@@ -14,12 +14,17 @@ function Form() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('')
 
-  const handleInputChange = (e) => {
-
-    const { name, value } = e.target;
-
-    
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
+  
+  const handleInputChange = (name, value) => {
+    if (name === 'firstName') {
+      setFirstName(value);
+    } else if (name === 'lastName') {
+      setLastName(value);
+    } else if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'message') {
+      setMessage(value);
+    }
   };
 
   const form = useRef();
@@ -27,7 +32,7 @@ function Form() {
 const sendEmail = (e) => {
 e.preventDefault();
 // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
-emailjs.sendForm('service_185iimh', 'template_f8ckkmi', form.current, 
+emailjs.sendForm('service_185iimh', 'template_vlw85cx', form.current, 
 'Bsx-VnVnxg6DAcwuC')
   .then((result) => {
       console.log(result.text);
@@ -48,36 +53,37 @@ emailjs.sendForm('service_185iimh', 'template_f8ckkmi', form.current,
       <h2 className="handjet">
         Talk to you soon {firstName} {lastName}, thanks for reaching out!
       </h2>
-      <form className="form" onSubmit={sendEmail}>
+      <form className="form" ref={form} onSubmit={sendEmail}>
         <input
           value={firstName}
           name="firstName"
-          onChange={handleInputChange}
+          onChange={(e) => handleInputChange(e.target.name, e.target.value)}
           type="text"
           placeholder="First Name"
         />
         <input
           value={lastName}
           name="lastName"
-          onChange={handleInputChange}
+          onChange={(e) => handleInputChange(e.target.name, e.target.value)}
           type="text"
           placeholder="Last Name"
         />
         <input
         value={email}
         name='email'
-        onChange ={handleInputChange}
+        onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+       
         type='text'
         placeholder ='Email'
         />
         <input
         value={message}
         name ='message'
-        onChange ={handleInputChange}
+        onChange={(e) => handleInputChange(e.target.name, e.target.value)}
         type ='text'
         placeholder='Please enter your message here!'
         />
-        <button style={{color:"green"}} type="submit">
+        <button className="invert-button handjet " type="submit">
           Submit
         </button>
       </form>
