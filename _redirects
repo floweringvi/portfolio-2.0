@@ -1,6 +1,7 @@
-/  /projects
-/  /contact
-/projects /
-/contact  /
-/projects /contact
-/contact  /projects
+# Redirects from what the browser requests to what we serve
+/                    /projects
+/                    /contact
+/projects            /
+/contact             /
+/projects            /contact
+/contact             /projects
