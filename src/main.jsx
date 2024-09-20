@@ -7,10 +7,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.jsx';
-import AboutMe from './pages/AboutMe';
-import Error from './pages/Error';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import AboutMe from './pages/AboutMe.jsx';
+import Error from './pages/Error.jsx';
+import Contact from './pages/Contact.jsx';
+import Portfolio from './pages/Portfolio.jsx';
 
 
 const router = createBrowserRouter([
