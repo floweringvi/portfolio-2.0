@@ -6,7 +6,7 @@ export default function Header(){
         <header>
             <div>
                 <a
-                className="display-4 mb-0 handjet text-decoration-none"
+                className="display-4 mb-0 handjet text-decoration-none title"
                 style={{
                   backgroundColor: "var(--background-color)",
                   color: "var(--text-color)",

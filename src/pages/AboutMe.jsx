@@ -4,12 +4,13 @@ import photo from "../assets/images/images.portfolio.png";
 
 // import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faCalendarCheck} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 const element = <FontAwesomeIcon icon={faCode} />;
 const linkedIn = <FontAwesomeIcon icon={faLinkedin} />;
 const github = <FontAwesomeIcon icon={faSquareGithub} />;
+const calendar = <FontAwesomeIcon icon={faCalendarCheck} />;
 
 export default function Home() {
   return (
@@ -44,7 +45,17 @@ export default function Home() {
             </div>
           </div>
           <div className="col order-1">
-            <div className="circle" id="circle-two">
+            <div className="gowun-batang-regular">
+              <a
+              href="/contact"
+              role="button"
+              className="mini-hero"
+              >
+                <p>Need a website? Contact me today for an appointment <i>{calendar}</i></p>
+                </a>
+            </div>
+          
+            <div className="square" id="circle-two">
               <ul className="gowun-batang-regular about-body all-text">
                 <li>
                   <i>{element}</i> HTML
@@ -78,7 +89,8 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="circle" id="circle-three">
+           
+            <div className="square" id="circle-three">
               <p className="gowun-batang-regular about-body all-text">
                 Project experience includes:
                 <ul className="about-body gowun-batang-regular">
