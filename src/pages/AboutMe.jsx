@@ -1,62 +1,108 @@
-import React from 'react';
+import React from "react";
 
-import photo from '../assets/images/images.portfolio.png'
-
-
+import photo from "../assets/images/images.portfolio.png";
 
 // import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faSquareGithub} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
-const element = <FontAwesomeIcon icon={faCode} />
-const linkedIn = <FontAwesomeIcon icon={faLinkedin}/>
-const github = <FontAwesomeIcon icon={faSquareGithub} />
-
-
-
-
-
-
+const element = <FontAwesomeIcon icon={faCode} />;
+const linkedIn = <FontAwesomeIcon icon={faLinkedin} />;
+const github = <FontAwesomeIcon icon={faSquareGithub} />;
 
 export default function Home() {
-    return (
-       
-       
-        <div >
-            
-           
-            <div className="container">
-            <div className="row">
-                <div className="col">
-           
-            <img alt ={'Avater Likeness as Placeholder'}
-            src= {photo} className="about-img"></img>
+  return (
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <img
+              alt={"Avater Likeness as Placeholder"}
+              src={photo}
+              className="about-img"
+            ></img>
+            <div className="square" id="circle-one">
+              <ul className=" gowun-batang-regular about-body first-bubble">
+                <li>
+                  <i>{element}</i> A budding developer who works on all aspects
+                  of the FullStack.
+                </li>
+                <li>
+                  <i>{element}</i> Proficient in a wide range of programming
+                  languages
+                </li>
+                <li>
+                  <i>{element}</i> Holding a passionate interest in backend
+                  technologies and data structures
+                </li>
+                <li>
+                  <i>{element}</i> Previously taken charge of Model
+                  generation, API requests and more
+                </li>
+              </ul>
             </div>
-            <div className="col order-1">
-            <p className=" gowun-batang-regular about-body">
-                Violet Stanziani is a budding developer who enjoys working on all aspects of the Full-Stack. Proficient in a wide range of programming languages, including but not limited to: 
-                </p>
-                <ul className="gowun-batang-regular">
-                    <li><i>{element}</i> HTML</li>
-                    <li><i>{element}</i> CSS</li>
-                    <li><i>{element}</i> Bootstrap</li>
-                    <li><i>{element}</i> Javascript</li>
-                    <li><i>{element}</i> JQUERY</li>
-                    <li><i>{element}</i> Handlebars</li>
-                    <li><i>{element}</i> Sequelize</li>
-                    <li><i>{element}</i> REACT</li>
-                    <li><i>{element}</i> and MongoDb</li>
-                    </ul> 
-                    <p className="gowun-batang-regular about-body">
-                     She has created web applications ranging from blogging applications and recipe generators to an ethical
-                travel website that promotes small local business first and a crafting site that saves and logs crafts a user may be interested in. She holds a passionate interest in backend technologies and data structures, taking charge of things like model generation, seeding and API requests.  
-                </p>
-            
+          </div>
+          <div className="col order-1">
+            <div className="circle" id="circle-two">
+              <ul className="gowun-batang-regular about-body all-text">
+                <li>
+                  <i>{element}</i> HTML
+                </li>
+                <li>
+                  <i>{element}</i> CSS
+                </li>
+                <li>
+                  <i>{element}</i> Bootstrap
+                </li>
+                <li>
+                  <i>{element}</i> Javascript
+                </li>
+                <li>
+                  <i>{element}</i> JQUERY
+                </li>
+                <li>
+                  <i>{element}</i> Handlebars
+                </li>
+                <li>
+                  <i>{element}</i> Sequelize
+                </li>
+                <li>
+                  <i>{element}</i> REACT
+                </li>
+                <li>
+                  <i>{element}</i> MongoDb
+                </li>
+                <li>
+                    <i>{element}</i> and More!
+                </li>
+              </ul>
             </div>
+            <div className="circle" id="circle-three">
+              <p className="gowun-batang-regular about-body all-text">
+                Project experience includes:
+                <ul className="about-body gowun-batang-regular">
+                  <li>
+                    <i>{element}</i> Generic Blogging applications
+                  </li>
+                  <li>
+                    <i>{element}</i> Recipe generator: Dad Dinner
+                  </li>
+                  <li>
+                    <i>{element}</i> An Ethical travel website: Greentrail
+                  </li>
+                  <li>
+                    <i>{element}</i> Crafting Website: Craft Corner
+                  </li>
+                  <li>
+                    <i>{element}</i> This Portfolio!
+                  </li>
+                </ul>
+              </p>
             </div>
-            </div>
+          </div>
         </div>
-        
-    );
+      </div>
+    </div>
+  );
 }
