@@ -20,7 +20,7 @@ export default function Portfolio(){
             <img alt={'image of dad dinner homepage'} src={dadDinner} className="carousel-img" ></img>
             <a className="borders handjet text-decoration-none invert-button carousel-ref" href="https://adammathis05.github.io/dad-dinner/" role="button"> Deployment</a>
             <a className="borders handjet text-decoration-none invert-button carousel-ref" href="https://github.com/adammathis05/dad-dinner"><i>{github}</i> Repository</a>
-            <p >Dad Dinner is a website for the busy parent in your life, they have a million things to do and figuring out what to have for dinner shouldn't be one of them. Search for a specific main ingreidient or randomzie for some fun. Working on this project put JavaScript skills to test, fetching from various API's, manipulating JSON and building responsive results pages.</p>
+            <p >Dad's Dinner is a website for the busy parent in your life, they have a million things to do and figuring out what to have for dinner shouldn't be one of them. Search for a specific main ingreidient or randomzie for some fun. Working on this project put JavaScript skills to test, fetching from various API's, manipulating JSON and building responsive results pages.</p>
            
            </div>
            <div className="gowun-batang-regular">
