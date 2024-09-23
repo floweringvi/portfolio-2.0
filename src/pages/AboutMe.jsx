@@ -51,7 +51,7 @@ export default function Home() {
               role="button"
               className="mini-hero"
               >
-                <p>Need a website? Contact me today for an appointment <i>{calendar}</i></p>
+                <p>Contact me today for an appointment <i>{calendar}</i></p>
                 </a>
             </div>
           
