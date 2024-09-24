@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../assets/violetstanziani-resume.pdf'
+import Resume from '../assets/stanziani-violet-resume.pdf'
 
 export default function Header(){
     return(
