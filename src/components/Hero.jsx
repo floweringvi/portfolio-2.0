@@ -17,7 +17,7 @@ const Hero =() => {
           alt="Image of code from craft corner"
           className="hero-image-start"
         />
-        <div className="hero-content">
+        <div className="hero-content-one">
           <p id="hero-sub" className="handjet hero-font" >Full-Stack Development</p>
           <div>
             <h1 className="handjet hero-font" id="hero-title">
@@ -29,18 +29,26 @@ const Hero =() => {
       <div className="hero">
         <img
         src={SVG}
-        alt=""
+        alt="SVG testing code"
         className="hero-image"
         />
+        <div className="hero-content">
+          <p className="handjet"> Testing</p>
+        </div>
         
 
       </div>
       <div className="hero">
         <img
         src={Ecomm}
-        alt=""
+        alt="Api ROUTES for e-commerce site"
         className="hero-image"
         />
+        <div className="hero-content"> 
+          <p className="handjet">
+            API Routes
+          </p>
+        </div>
 
       </div>
       <div className="hero">
@@ -48,6 +56,9 @@ const Hero =() => {
         src={Fetch}
         className="hero-image"
         />
+        <div className="hero-content">
+          <p className="handjet">Fetch Requests</p>
+        </div>
         
       </div>
       </Carousel>
