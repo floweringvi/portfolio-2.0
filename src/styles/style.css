@@ -59,7 +59,7 @@ header {
   height: 110px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,12 +72,14 @@ header {
 background-color: var(--text-color);
 color: var(--background-color);
 transform: scale(1.05);
+
 }
 .invert-button {
   background-color: var(--text-color);
   color: var(--background-color);
-  padding: 6px 20px 6px 20px;
-  margin: 0px 2px 0px 2px;
+  /* padding: 6px 20px 6px 20px; */
+  padding:  15px 6px 15px;
+  margin: 0px 6px 0px 6px;
   
 }
 .invert-button:hover{
@@ -120,11 +122,17 @@ transform: scale(1.05);
 #hero-sub{
   font-size:30px;
 }
+.hero-image-start {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  opacity: 0.2;
+}
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container */
-  opacity: 0.3;
+  object-fit: cover; 
+  opacity: 0.5;
 }
 
 .hero-content {
@@ -134,12 +142,9 @@ transform: scale(1.05);
   transform: translate(-50%, -50%);
   color: var(--text-color);
   text-align: center;
-  z-index: 1; /* Ensures text is above the image */
+  z-index: 1; 
 }
-#hero-borders {
-  border-top: 2px solid var(--text-color);
-  padding-top: 20px;
-}
+
 
 /*ABOUTME*/
 
