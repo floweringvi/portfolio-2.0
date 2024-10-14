@@ -1,6 +1,6 @@
 import React from "react";
 
-import photo from "../assets/images/images.portfolio.png";
+import photo from "../assets/images/Portfolio.jpeg";
 
 // import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
