@@ -10,7 +10,7 @@ import App from './App.jsx';
 import AboutMe from './pages/AboutMe.jsx';
 import Error from './pages/Error.jsx';
 import Contact from './pages/Contact.jsx';
-import Portfolio from './pages/Portfolio.jsx';
+import Portfolio from './pages/Porttwo.jsx';
 
 
 const router = createBrowserRouter([

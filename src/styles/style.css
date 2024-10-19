@@ -220,6 +220,10 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
 
 .all-text{
   margin: auto;
@@ -241,7 +245,7 @@ ul {
   border-radius: 10px;
 }
 .article-a{
-  color: var(--hover-color)
+  color: black;
 }
 .carousel-img{
   margin-bottom: 30px;
